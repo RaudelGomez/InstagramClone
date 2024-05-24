@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./fonts.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Fotogram</title>
+		<link
+			rel="shortcut icon"
+			href="./img/icon/logo-fotogram.svg"
+			type="image/x-icon"
+		/>
+	</head>
+	<body onload="includeHTML()">
+		<!-- Navigation -->
+		<div class="navigation" w3-include-html="templates/nav.html"></div>
+		<!-- Post saved-->
+		<main class="reels">
+			<h1>Fotogram</h1>
+			<section id="reelsContainer" class="container-reels"></section>
+		</main>
+		<script src="./reels.js"></script>
+	</body>
+</html>

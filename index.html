@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./fonts.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<meta
+			name="description"
+			content="This is only a Website to practice html, css und js"
+		/>
+		<title>Fotogram</title>
+		<link
+			rel="shortcut icon"
+			href="./img/icon/logo-fotogram.svg"
+			type="image/x-icon"
+		/>
+	</head>
+	<body onload="includeHTML()">
+		<!-- Navigation -->
+		<div class="navigation" w3-include-html="templates/nav.html"></div>
+		<!-- Stories & Post -->
+		<main class="index">
+			<section id="container" class="container">
+				<article class="headline">
+					<h1 class="icons-left headline-logo">
+						<a href="index.html">Fotogram</a>
+					</h1>
+					<div class="icons-right headline-icons">
+						<a href="./postSaved.html"
+							><img src="./img/icon/bookmark.svg" alt="heart"
+						/></a>
+						<img src="./img/icon/messenger.svg" alt="send" />
+					</div>
+				</article>
+				<!-- Stories -->
+				<article id="stories-container" class="stories-container">
+					<h4 class="stories-headline">For you <span>followed</span></h4>
+					<div id="all-stories" class="all-stories"></div>
+				</article>
+				<!-- Post -->
+				<article id="posts" class="posts"></article>
+			</section>
+			<!-- Suggestions -->
+			<section id="suggestions-container" class="suggestions-container">
+				<h4>Suggestions For You</h4>
+				<div id="suggestions" class="suggestions"></div>
+			</section>
+		</main>
+		<script src="./script.js"></script>
+		<script src="./html.script.js"></script>
+	</body>
+</html>
